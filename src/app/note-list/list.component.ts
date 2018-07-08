@@ -5,7 +5,6 @@ import { Note } from '../model/note';
     selector: 'note-list',
     templateUrl: 'list.component.html',
     styleUrls: ['list.component.css']
-    
 })
 export class ListComponent implements OnInit {
     @Input()
@@ -20,5 +19,11 @@ export class ListComponent implements OnInit {
 
     onActivate(note: Note) {
         this.activate.emit(note);
+    }
+
+    addCard() {
+        let newNote = new Note("");
+        this.notes.push(newNote);
+        this.activate.emit(newNote);
     }
 }

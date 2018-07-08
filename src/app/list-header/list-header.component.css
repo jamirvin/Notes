@@ -1,0 +1,20 @@
+:host {
+    max-height: 100%;
+    max-width: 100%;
+    border-bottom: 1px solid black;
+    padding-left: 20px;
+    padding-right: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background-image: url("../../assets/plus.svg");
+    background-size: contain;
+    cursor: pointer;
+}

@@ -1,4 +1,4 @@
-
+<note-list-header (addCard)="addCard()" class="header"></note-list-header>
 <div class="contents">
     <div class="card-container" *ngFor="let note of notes">
         <note-card [note]="note" (click)="onActivate(note)" class="card"></note-card>
