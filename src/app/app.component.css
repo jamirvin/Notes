@@ -1,0 +1,16 @@
+
+.content-area {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.list {
+    flex: 1;
+}
+
+.compose {
+    flex: 4;
+}

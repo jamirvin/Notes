@@ -1,0 +1,29 @@
+
+:host {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+:host:not(.active) {
+    cursor: pointer;
+}
+
+:host.active {
+    background-color: lightblue;
+}
+
+:host:not(.active):hover {
+    background-color: hsl(195, 40%, 95%);
+}
+
+.content {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    white-space: pre-wrap;
+    padding-left: 20px;
+    padding-top: 10px;
+}
