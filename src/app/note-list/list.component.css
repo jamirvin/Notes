@@ -14,7 +14,13 @@
 }
 
 .header {
+    position: relative;
     height: 25px;
+    flex-shrink: 0;
+}
+
+.list {
+    overflow-y: auto;
 }
 
 /* .card {
