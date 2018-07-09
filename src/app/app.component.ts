@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Note } from './model/note';
+import { NoteSchema, NotesService } from './notes.service';
 
 @Component({
     selector: 'app-root',
@@ -7,17 +8,20 @@ import { Note } from './model/note';
     styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-    notes = [
-        new Note("example"), 
-        new Note("Another example"),
-        new Note("This is an example\nWith a newline")
-    ];
 
-    active: Note = this.notes[1];
+    notes: Note[];
+    active: Note;
+
+    constructor(private noteService: NotesService) {
+
+    }
 
     ngOnInit() {
-        this.active = this.notes[1];
-        this.active.activate();
+        this.noteService.getNotes().subscribe(notes => {
+            this.notes = notes;
+            this.active = notes[0];
+            this.active.activate();
+        })
     }
 
     onActivate(note: Note) {

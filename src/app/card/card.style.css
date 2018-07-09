@@ -5,6 +5,8 @@
     width: 100%;
     border-bottom: 1px solid black;
     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 :host:not(.active) {

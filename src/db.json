@@ -1,0 +1,16 @@
+{
+    "notes": [
+        {
+            "id": 1,
+            "text": "This is an example"
+        },
+        {
+            "id": 2,
+            "text": "This is an another example"
+        },
+        {
+            "id": 3,
+            "text": "This is a third example"
+        }
+    ]
+}

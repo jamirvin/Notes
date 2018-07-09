@@ -11,6 +11,13 @@ export class ComposeComponent implements OnInit {
     @Input()
     note: Note;
 
+    getText() {
+        if (this.note)   
+            return this.note.text;
+        else 
+            return ""
+    }
+
     constructor() { }
 
     ngOnInit() { }

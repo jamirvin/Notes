@@ -2,7 +2,7 @@
 export class Note {
     private active: boolean = false;
 
-    constructor(public text: string) {
+    constructor(public text: string, public id: number) {
 
     }
 

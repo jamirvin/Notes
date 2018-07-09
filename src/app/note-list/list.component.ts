@@ -22,7 +22,7 @@ export class ListComponent implements OnInit {
     }
 
     addCard() {
-        let newNote = new Note("");
+        let newNote = new Note("", this.notes[this.notes.length - 1].id + 1);
         this.notes.push(newNote);
         this.activate.emit(newNote);
     }

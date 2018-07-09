@@ -1,2 +1,1 @@
-
-<textarea class="textInput" [(ngModel)]="note.text"></textarea>
+<textarea *ngIf="note" #input autofocus="true" (blur)="input.focus()" class="textInput" [(ngModel)]="note.text"></textarea>
